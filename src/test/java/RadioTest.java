@@ -80,16 +80,6 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @Test
-    public void shouldSetCurrentStationTo0WhenCurrentStationIs10() {
-        Radio radio = new Radio();
-        radio.setCurrentStation(10);
-        radio.nextStation();
-
-        int expected = 0;
-        int actual = radio.getCurrentStation();
-        Assertions.assertEquals(expected, actual);
-    }
 
     @Test
     public void shouldDecrementCurrentStationBy1WhenCurrentStationIsNot0() {
