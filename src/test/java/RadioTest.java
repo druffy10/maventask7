@@ -81,9 +81,9 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetCurrentStationTo0WhenCurrentStationIs9() {
+    public void shouldSetCurrentStationTo0WhenCurrentStationIs10() {
         Radio radio = new Radio();
-        radio.setCurrentStation(9);
+        radio.setCurrentStation(10);
         radio.nextStation();
 
         int expected = 0;
