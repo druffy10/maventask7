@@ -1,16 +1,16 @@
 public class Radio {
     private int currentStation;
     private int currentVolume;
-    private int totalStations = 10;
+    private int totalStations;
     private int minVolume;
     private int maxVolume = 100;
 
 
-    public Radio(int totalStations) {
-        this.totalStations = totalStations;
-    }
-    
     public Radio() {
+        totalStations = 10;
+    }
+    public Radio(int stationsCount) {
+        totalStations = stationsCount - 1;
     }
 
     public int getCurrentStation() {
