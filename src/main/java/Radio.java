@@ -6,10 +6,11 @@ public class Radio {
     private int maxVolume = 100;
 
 
+    public Radio(int totalStations) {
+        this.totalStations = totalStations;
+    }
+    
     public Radio() {
-            this.totalStations = totalStations;
-            this.minVolume = minVolume;
-            this.maxVolume = maxVolume;
     }
 
     public int getCurrentStation() {
